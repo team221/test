@@ -1,0 +1,15 @@
+--git config: only the first time use git
+git config --global user.name "..."
+git config --global user.email "...."
+
+configure proxy if needed:
+git config --global http.proxy http://username:password@proxiURL:proxiPort
+git config --global http.sslVerify false
+
+--Create a repo: Move to working directory
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/team221/test.git
+git push -u origin master
